@@ -36,7 +36,7 @@ if(!empty($_GET['status'])){
 			<a href="indexDelete.php" style= "padding:20px">Delete Career Path</a>
     </div>
     <div class="panel-body">
-      <form action="deleteData.php" method="post" enctype="multipart/form-data" id="importFrm">
+      <form action="importData.php" method="post" enctype="multipart/form-data" id="importFrm">
         <input type="file" name="file" />
         <input type="submit" class="btn btn-primary" name="importSubmit" value="IMPORT">
             </form>
@@ -56,7 +56,6 @@ if(!empty($_GET['status'])){
             <td>
               <?php echo $row['careerID']; ?>
             </td>
-            <td>
           </tr>
           <?php } }else{ ?>
           <tr>
